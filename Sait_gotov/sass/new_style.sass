@@ -1,0 +1,605 @@
+@import "vars"
+
+@import "mixin"
+.home
+    display: flex
+    align-items: center
+    background-color: #002547
+    background-image: url(../images/home.png)
+    background-repeat: no-repeat
+    background-position: right top
+    min-height: 100vh
+    padding-top: 150px
+    padding-bottom: 150px
+    @media (max-width: 1350px) and (min-width: 1001px) 
+        background-size: 40%
+        background-position: right center
+    @media (max-width: 1000px) 
+        background: #002547
+        min-height: auto
+    @media (max-width: 768px) 
+        padding-top: 100px
+        padding-bottom: 50px
+    
+    &__content
+           width: 580px
+           .btn
+                margin-right: 30px
+                @media (max-width: 514px)
+                    margin-right: 15px
+                    margin-right: 15px
+                    margin-bottom: 20px
+           @media (max-width: 768px) 
+                width: 100%
+                text-align: center
+            
+    .blue-span
+        color: #0076D9
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        font-size: 16px
+        line-height: 25.6px
+        @media (max-width: 525px) 
+            font-size: 14px
+        @media (max-width: 380px) 
+            font-size: 12px
+    h1
+        margin-top: 6px
+        margin-bottom: 25px
+        color: #ffffff
+        text-transform: capitalize
+        font-weight: 500
+        font-size: 60px
+        line-height: 84px
+        @media (max-width: 768px) 
+            font-size: 50px
+            line-height: 70px
+        @media (max-width: 525px) 
+            font-size: 35px
+            line-height: 50px
+        @media (max-width: 380px) 
+            font-size: 30px
+            line-height: 43px
+        // here
+        span
+            // @extend %default
+            // @include default
+            color: #0092FF
+            
+        .fw-600
+            font-weight: 600
+        .fw-700
+            font-weight: 700
+    &__caption
+        max-width: 401px
+        color: #D7DDE3
+        font-size: 18px
+        line-height: 29px
+        @media (max-width: 768px) 
+            margin-left: auto
+            margin-right: auto
+            font-size: 16px
+            line-height: 24px
+        
+        a
+            color: #E4E9EE
+            text-transform: capitalize
+    &__text 
+        max-width: 450px
+        color: #7C92A5
+        font-size: 16px
+        line-height: 22px
+        padding-top: 14px
+        border-top: 1px solid #2A526E
+        @media (max-width: 768px) 
+            margin-left: auto
+            margin-right: auto
+            font-size: 14px
+            line-height: normal
+        b
+            font-weight: 500
+            color: #AFBEC9
+    &__actions
+        margin-top: 40px
+        margin-bottom: 40px
+    
+.brands
+    margin: 140px 0
+    @media (max-width: 920px )
+        margin: 90px 0
+    @media (max-width: 525px) 
+        margin: 60px 0
+    
+    .row
+        display: flex
+        justify-content: space-between
+        align-items: center
+        opacity: 0.7
+        @media (max-width: 920px)
+            flex-wrap: wrap
+            justify-content: center
+            width: 100%
+            .logo
+                width: 250px
+                display: flex
+                justify-content: center
+                margin: 20px auto
+                @media (max-width: 484px) 
+                    max-width: 250px
+                
+.two__saas
+    margin-bottom: 140px
+    @media (max-width: 768px) 
+        margin-top: 100px
+        margin-bottom: 80px
+    @media (max-width: 484px) 
+        margin-bottom: 60px
+    .block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 768px) 
+            flex-wrap: wrap
+            justify-content: center
+            text-align: center
+    .left
+        max-width: 574px
+        @media (max-width: 768px) 
+            max-width: 420px
+        img
+            width: 100%
+    .rigth
+        max-width: 496px
+        font-size: 16px
+        line-height: 25.6px
+        text-transform: capitalize
+        @media (max-width: 768px) 
+            margin-top: 40px
+        @media (max-width: 525px) 
+            font-size: 14px
+            line-height: normal
+    .list li
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: #95a2ae
+        list-style: none
+        margin-bottom: 25px
+        max-width: 465px
+        @media (max-width: 768px) 
+            text-align: left
+        img
+            margin-right: 15px
+
+.like__saas
+    margin-bottom: 140px
+    @media (max-width: 768px) 
+        margin-bottom: 80px
+    
+    .hello
+        max-width: 466px
+        @media (max-width: 768px) 
+            margin: 0 auto 60px
+            text-align: center
+        @media (max-width: 484px) 
+            margin-bottom: 40px
+    .cards
+        display: flex
+        max-width: 1146px
+        justify-content: space-between
+        margin-bottom: 75px
+        @media (max-width: 768px) 
+            flex-wrap: wrap
+            justify-content: center
+            margin-bottom: 30px
+    .card-item
+        width: 32%
+        border-radius: 6px
+        box-shadow: 0px 10px 15px rgb(0, 0, 0)
+        @media (max-width: 768px) 
+            width: 90%
+            margin-bottom: 50px
+        
+    .card-image
+        transition: all .6s ease
+        &:hover 
+            transform: scale(1.08)
+        img
+            width: 100%
+    .card-info
+        max-width: 328px
+        margin: 24px auto 20px
+        @media (max-width: 1046px)
+            padding-right: 5px
+            padding-left: 5px
+
+    .card-text
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #222
+        width: 80%
+        margin-bottom: 20px
+        @media (max-width: 1046px)
+            margin: 0 auto 20px
+            text-align: center
+        @media (max-width: 768px) 
+            width: 90%
+            font-size: 26px
+            line-height: 36px
+        @media (max-width: 465px) 
+            font-size: 20px
+            line-height: 26px
+
+    .card-end
+        display: flex
+        align-items: center
+        justify-content: space-between
+        line-height: 21.7px
+        color: #555
+        @media (max-width: 1046px) 
+            flex-wrap: wrap
+            justify-content: center
+            .time
+                margin-bottom: 10px
+        @media (max-width: 768px) 
+            font-size: 16px
+    .down-icons
+        width: 17px
+        height: 17px
+        margin-right: 8px
+    .time, .adres
+        display: flex
+        align-items: center
+    .like__actions 
+        & > .btn
+            font-weight: 500
+            font-size: 16px
+            line-height: 19.2px
+            width: 198px
+            text-align: center
+            padding: 15px 0
+        & > .btn-white
+            border-color: #1d92ff
+        @media (max-width: 768px) 
+            display: flex
+            justify-content: center
+            width: 90%
+            margin: 0 auto
+        @media (max-width: 465px) 
+            flex-wrap: wrap
+    .btn-blue
+        background: #1D92FF
+        color: #fff
+        margin-right: 25px
+        @media (max-width: 465px) 
+            width: 100%
+            margin-right: 0
+            margin-bottom: 20px
+        &:hover
+            color: #1D92FF
+            background: #fff
+            border-color: #1D92FF
+    
+.electric_saas
+    margin-bottom: 80px
+    @media (max-width: 920px) 
+        margin-bottom: 20px
+    @media (max-width: 525px) 
+        margin-bottom: 60px
+    &__start
+        text-align: center
+        margin-bottom: 98px
+        @media (max-width: 768px) 
+            margin-bottom: 70px
+        @media (max-width: 525px)
+            margin-bottom: 50px
+    h3
+        margin: 10px auto 25px
+        max-width: 628px
+        font-weight: 600
+        font-size: 39px
+        line-height: 52.65px
+        @media (max-width: 920px)
+            font-size: 36px
+            line-height: 42px
+        @media (max-width: 768px)
+            font-size: 32px
+        @media (max-width: 484px) 
+            font-size: 28px
+            line-height: 36px
+    .subtitle
+        font-size: 16px
+        line-height: 25.6px
+        @media (max-width: 525px)
+            margin-bottom: 35px
+            font-size: 18px
+            margin-right: 10px
+            margin-left: 10px
+        @media (max-width: 484px) 
+            font-size: 16px
+    &__end
+        max-width: 1010px
+        margin: 0 auto
+    &__row
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        @media (max-width: 768px) 
+            justify-content: space-around
+        @media (max-width: 525px)
+            justify-content: center
+    h4
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        margin: 25px 0 15px
+        text-transform: capitalize
+        @media (max-width: 525px)
+            font-size: 26px
+    .item__icon
+        @media (max-width: 768px) 
+            margin-bottom: 20px
+        img
+            @media (max-width: 768px) 
+                width: 62%
+            @media (max-width: 525px)
+                width: 40%
+        transition: all .7s ease
+        
+    .row__item
+        margin-bottom: 60px
+        text-align: center
+        width: 30%
+        @media (max-width: 768px) 
+            width: 40%
+            margin-bottom: 80px
+        @media (max-width: 525px)
+            width: 80%
+            margin-bottom: 60px
+            &:last-child
+                margin-bottom: 0
+                
+        &:hover
+            .item__icon
+                transform: scale(1.35)
+                @media (max-width: 768px) 
+                    transform: scale(1.25)
+        & .subtitle
+            margin-bottom: 0
+
+.menu
+    position: absolute
+    width: 100%
+    top: 50px
+    background-color: #002547
+    z-index: 10
+    @media ( max-width: 768px)
+        padding: 10px 0
+        top: 20px
+        &__actions
+            display: none
+    &__mobile
+        margin-top: 7px
+        display: none
+        max-height: 60px
+        width: 80px
+        z-index: 9
+        img
+            width: 100%
+        @media (max-width: 768px) 
+            display: block
+        @media (max-width: 465px) 
+            width: 60px
+            margin-right: -20px
+        .mobile__active
+            display: block
+        .mobile__close
+            display: block
+            margin: 0
+            img
+                width: 60%
+        .hide
+            display: none
+    &__inner
+        display: flex
+        justify-content: space-between
+            
+    &__nav ul
+        display: flex
+        height: 100%
+        width: 457px
+        align-items: center
+        justify-content: space-between
+        list-style: none
+        @media ( max-width: 820px)
+            width: 400px
+        @media (max-width: 768px) 
+            display: none
+        li
+            font-family: "Poppins"
+            font-size: 16px
+            font-weight: 400
+            line-height: 21px
+            a
+                color: #8a9baa
+                text-decoration: none
+                transition: .4s
+                &::after
+                    display: block
+                    content: ''
+                    width: 90%
+                    height: 2px
+                    background-color: #fff
+                    border-radius: 5px
+                    margin-top: 3px
+                    margin-left: 5%
+                    transition: .3s
+                    opacity: 0
+                &:hover
+                    color: #fff
+                    &::after
+                        opacity: 1
+    
+.fixed
+    position: fixed
+    top: 0
+    padding: 10px 0
+    @media (max-width: 768px) 
+        padding: 10px 0
+    @media (max-width: 484px)
+        padding: 5px 0
+.footer
+    background: #000
+    &__inner
+        display: flex
+        justify-content: space-between
+        min-height: 380px
+        @media (max-width: 860px)
+            flex-wrap: wrap
+            justify-content: space-around
+            padding: 40px 0
+        @media (max-width: 484px) 
+            justify-content: space-between
+            padding: 50px 0 20px
+
+    &__text
+        max-width: 225px
+        font-family: "Poppins"
+        font-size: 14px
+        font-weight: 400
+        color: #6f7174
+        text-transform: capitalize
+        margin-top: 30px
+        @media (max-width: 860px) 
+            padding-bottom: 20px
+        @media (max-width: 525px) 
+            font-size: 12px
+            margin-top: 15px
+    
+    &__item 
+        margin: 125px 0
+        min-height: 150px
+        @media (max-width: 860px) 
+            margin: 0
+            width: 32%
+            text-align: center
+        @media (max-width: 484px) 
+            width: 45%
+            margin-bottom: 20px
+            text-align: left
+        h4
+            font-family: "Poppins"
+            font-size: 16px
+            font-weight: 500
+            color: #fff
+        &:last-child 
+            @media (max-width: 484px) 
+                width: 100%
+                margin: 0 auto
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                align-items: center
+                max-height: 130px 
+                text-align: center
+                h4
+                    width: 100%
+            ul
+                margin-top: 0
+                display: flex
+                @media (max-width: 860px) 
+                    justify-content: space-around
+                @media (max-width: 484px) 
+                    align-items: center
+                    justify-content: space-around
+                    width: 100%
+                li  
+                    margin-right: 10px
+                    width: 40px
+                    height: 40px
+                    @media (max-width: 484px)
+                        width: 50px
+                        height: 50px
+                a img
+                    width: 100%
+                    transition: all .5s ease
+                    @media (max-width: 484px) 
+                        width: 100%
+                    &:hover
+                        transform: scale(1.4) 
+
+        form
+            @media (max-width: 484px)
+                width: 100%
+        input
+            background: none
+            color: #6f7174
+            height: 36px
+            border: 2px solid #6f7174
+            padding-left: 15px
+            border-radius: 20px
+            margin: 20px auto
+            @media (max-width: 525px) 
+                width: 150px
+                font-size: 12px
+            @media (max-width: 484px)
+                width: 100%
+                font-size: 16px
+            
+    ul
+        margin-top: 30px
+        list-style: none
+        
+        li
+            margin-bottom: 20px
+            @media (max-width: 860px) 
+                margin-bottom: 10px
+            a
+                text-decoration: none
+                font-family: "Poppins"
+                font-size: 14px
+                font-weight: 400
+                color: #6f7174
+                transition: all .3s ease
+                &:hover
+                    color: #fff
+.mobile__nav
+    display: none
+    @media (max-width: 768px) 
+        display: block
+        background-color:#002547
+        width: 200px
+        position: absolute
+        top: 70px
+        right: 5px
+        ul
+            list-style-type: none
+            li
+                margin: 10px 0
+                text-align: center
+                background-color: #002547
+                border: 1px solid #1D92FF
+            a
+                display: block
+                color: #fff
+                width: 100%
+                font-family: "Poppins", sans-serif
+                text-decoration: none
+                font-size: 18px
+                font-weight: 500
+                padding: 10px 0
+                transition: all .4s ease
+                &:hover 
+                    transform: scale(1.14)
+                    background-color: #1D92FF
+    @media (max-width: 465px) 
+        top: 50px
+        width: 150px
+
+.dont__show
+    display: none  
+
+#audio, #audio1, #audio2
+    display: none

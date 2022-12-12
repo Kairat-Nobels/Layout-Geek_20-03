@@ -1,0 +1,86 @@
+@import "vars"
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html 
+    font-size: $fz
+    font-family: 'Poppins', sans-serif
+    font-weight: 400
+
+.container 
+    width: 1146px
+    margin: 0 auto
+    @media (max-width: 1186px) 
+        width: 100%
+        padding-left: 20px
+        padding-right: 20px
+    
+
+.btn
+    display: inline-block
+    height: 53px
+    border-radius: 5px
+    line-height: 51px
+    padding: 0 30px
+    border: 1px solid transparent
+    text-decoration: none
+    text-transform: capitalize
+    font-size: 18px
+    transition: all .3s ease
+
+    &.btn-lg
+        min-width: 205px
+        text-align: center
+
+    &.btn-white
+        background-color: #fff
+        border-color: #fff
+        color: $mainColor
+        &:hover
+            background-color: $mainColor
+            border-color: $mainColor
+            color: #fff
+
+    &.btn-transparent
+        background-color: #193B59
+        color: #fff
+        &:hover
+            background-color: #fff
+            border-color: #fff
+            color: $mainColor
+
+.title
+    color: #000
+    margin: 10px 0 25px
+    flex: 0 1 425px
+    font-size: 39px
+    font-weight: 400
+    line-height: 52.65px
+    text-transform: capitalize
+    @media (max-width: 920px)
+        font-size: 38px
+        line-height: 42px
+    @media (max-width: 820px) 
+        font-size: 36px
+    @media (max-width: 484px) 
+        font-size: 32px
+    span
+        font-weight: 600
+.subtitle
+    flex: 0 1 496px
+    color: #6f7174
+    margin-bottom: 45px
+    b
+        font-weight: 600
+
+.blue-span 
+    color: #0076D9
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    font-size: 16px
+    line-height: 25.6px
+    @media (max-width: 920px)
+        font-size: 14px

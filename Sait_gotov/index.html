@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Base - website</title>
+	<link rel="stylesheet" href="fonts/poppins/stylesheet.css">
+	<link rel="stylesheet" href="css/bundle.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="menu" id="headerJs">
+			<div class="container">
+				<div class="menu__inner">
+					<div class="menu__logo">
+						<a target="_blank" href="https://github.com/Kairat-Nobels"><img src="images/icons/logo.svg" alt="logo"></a>
+					</div>
+					<div class="menu__nav">
+						<ul>
+							<li><a data-scroll="#introJs" href="#">Home</a></li>
+							<li><a data-scroll="#features" href="#">Features</a></li>
+							<li><a data-scroll="#testimonial" href="#">Testimonial</a></li>
+							<li><a data-scroll="#pricing" href="#">Pricing</a></li>
+							<li><a data-scroll="#contacts" href="#">CTA</a></li>
+						</ul>
+					</div>
+					<div class="menu__actions">
+						<a class="btn btn-white music" href="#">Try Demo</a>
+						<audio src="muzic/Sia_-_Unstoppable_(mp3-muzon.com).mp3" id="audio"  loop="true"></audio>
+					</div>
+					<div class="menu__mobile">
+						<a href="#" class="mobile__active"><img src="images/menu.png" alt=""></a>
+						<a href="#" class="mobile__close hide"><img src="images/close.png" alt=""></a>
+					</div>
+					
+				</div>
+				<div id="mobileVers" class="mobile__nav dont__show">
+						<ul>
+							<li><a class="kairat" data-scroll="#introJs" href="#">Home</a></li>
+							<li><a class="kairat1" data-scroll="#features" href="#">Features</a></li>
+							<li><a class="kairat2" data-scroll="#testimonial" href="#">Testimonial</a></li>
+							<li><a class="kairat3" data-scroll="#pricing" href="#">Pricing</a></li>
+							<li><a class="kairat4" data-scroll="#contacts" href="#">CTA</a></li>
+						</ul>
+					</div>
+			</div>
+		</header> 
+		
+		<div class="home" id="introJs">
+			<div class="container">
+				<div class="home__content">
+					<div class="home__title">
+						<span class="blue-span">Lorem ipsum dolor</span>
+						<h1>Always the <span class="fw-600">real</span> thing, always <span class="fw-700">Saas</span></h1>
+					</div>
+					<div class="home__caption">
+						<p>And that number is growing every day. That means <a href="">e-commerce</a> is thriving.</p>
+					</div>
+					<div class="home__actions">
+						<a class="btn btn-white btn-lg" target="_blank" href="https://www.instagram.com/kairat_nobels">try for free</a>
+						<a class="btn btn-transparent btn-lg" target="_blank" href="https://github.com/Kairat-Nobels">try for free</a>
+					</div>
+					<div class="home__text">
+						<p>There are some things money can’t buy. For everything else there’s ‘’<b>MasterCard</b>” is a good example. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="brands">
+			<div class="container">
+				<div class="row">
+					<div class="logo"><img src="images/fedx.png" alt="logo"></div>
+					<div class="logo"><img src="images/amazon.png" alt="logo"></div>
+					<div class="logo"><img src="images/fedex.png" alt="logo"></div>
+					<div class="logo"><img src="images/google.png" alt="logo"></div>
+					<div class="logo"><img src="images/microsoft.png" alt="logo"></div>
+				</div>
+			</div>
+		</div> 
+		<div class="two__saas" id="features">
+			<div class="container">
+				<div class="block">
+					<div class="left">
+						<img src="images/img1.png" alt="">
+					</div>
+					<div class="rigth">
+						<span class="blue-span">Lorem ipsum dolor</span>
+						<h2 class="title"><span>Two</span> Saas are better <span>than one.</span></h2>
+						<p class="subtitle">
+							One of the most fundamental ways to go about that is to create a memorable <b>e-commerce</b> slogan.
+						</p>
+						<ul class="list">
+							<li>
+								<img src="images/icons/download.svg" alt="down">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p></li>
+							<li class="list__click"><img src="images/icons/click.svg" alt="down">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</li>
+							<li><img src="images/icons/download.svg" alt="down">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="like__saas" id="testimonial"> 
+			<div class="container">
+				<div class="like__saas-content">
+					<div class="hello">
+						<span class="blue-span">Lorem ipsum dolor</span>
+							<h2 class="title"><span>With a name like Saas, it has to</span> be good.</h2>
+					</div>
+					<div class="cards">
+						<div class="card-item">
+							<div class="card-image">
+								<img src="images/card1.png" alt="">
+							</div>
+							<div class="card-info">
+								<p class="card-text">TED Talks at UCF College of Education</p>
+								<div class="card-end">
+									<div class="time">
+										<div class="down-icons"><img src="images/icons/clock.svg" alt=""></div>
+										<span>4.00 pm - 8.00 pm</span>
+									</div>
+									<div class="adres">
+										<div class="down-icons"><img src="images/icons/local.svg" alt=""></div>
+										<span>Dhaka Bangladesh</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-image">
+								<img src="images/card2.png" alt="">
+							</div>
+							<div class="card-info">
+								<p class="card-text">Summer Course Starts From June</p>
+								<div class="card-end">
+									<div class="time">
+										<div class="down-icons"><img src="images/icons/clock.svg" alt=""></div>
+										<span>4.00 pm - 8.00 pm</span>
+									</div>
+									<div class="adres">
+										<div class="down-icons"><img src="images/icons/local.svg" alt=""></div>
+										<span>Dhaka Bangladesh</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item">
+							<div class="card-image">
+								<img src="images/card3.png" alt="">
+							</div>
+							<div class="card-info">
+								<p class="card-text">Importance of Research Seminar</p>
+								<div class="card-end">
+									<div class="time">
+										<div class="down-icons"><img src="images/icons/clock.svg" alt=""></div>
+										<span>4.00 pm - 8.00 pm</span>
+									</div>
+									<div class="adres">
+										<div class="down-icons"><img src="images/icons/local.svg" alt=""></div>
+										<span>Dhaka Bangladesh</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="like__actions">
+						<a href="#" class="btn btn-blue tom">free trial</a>
+						<audio src="muzic/Tom Odell - Another Love.mp3" id="audio1"  loop="true"></audio>
+						<a href="#" class="btn btn-white attention">read more</a>
+						<audio src="muzic/Charlie Puth - Attention_(sefon.site).mp3" id="audio2"  loop="true"></audio>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="electric_saas" id="pricing"> 
+			<div class="container">
+				<div class="electric_saas__content">
+					<div class="electric_saas__start">
+						<span class="blue-span">Lorem ipsum dolor</span>
+						<h3>The Loudest Noise Comes From The Electric Saas.</h3>
+						<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+					</div>
+					<div class="electric_saas__end">
+						<div class="electric_saas__row">
+							<div class="row__item">
+								<div class="item__icon"><img src="images/electric/molot.svg" alt=""></div>
+								<h4>Responsive Layout</h4>
+								<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+							</div>
+							<div class="row__item">
+								<div class="item__icon"><img src="images/electric/light.svg" alt=""></div>
+								<h4>Smart BEM Grid</h4>
+								<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+							</div>
+							<div class="row__item">
+								<div class="item__icon"><img src="images/electric/man.svg" alt=""></div>
+								<h4>User Friendly</h4>
+								<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+							</div>
+							<div class="row__item">
+								<div class="item__icon"><img src="images/electric/wifi.svg" alt=""></div>
+								<h4>Built on Bootstrap v4</h4>
+								<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+							</div>
+							<div class="row__item">
+								<div class="item__icon"><img src="images/electric/goal.svg" alt=""></div>
+								<h4>Best online Security</h4>
+								<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+							</div>
+							<div class="row__item">
+								<div class="item__icon"><img src="images/electric/molnia.svg" alt=""></div>
+								<h4>Creative Design</h4>
+								<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div> 
+		<footer class="footer" id="contacts"> 
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__item">
+						<div class="footer__logo">
+							<a target="_blank" href="https://github.com/Kairat-Nobels"><img src="images/icons/logo.svg" alt="logo"></a>
+						</div>
+						<p class="footer__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</p>
+					</div>
+					<div class="footer__item">
+						<h4>Gustomers</h4>
+						<ul>
+							<li><a target="_blank" href="https://www.base.be/en/private.html">Buyer</a></li>
+							<li><a target="_blank" href="https://www.base.be/en/private.html">Supplier</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4>Company</h4>
+						<ul>
+							<li><a target="_blank" href="https://www.base.be/en/private.html">About Us</a></li>
+							<li><a target="_blank" href="https://github.com/Kairat-Nobels">Careers</a></li>
+							<li><a target="_blank" href="https://www.instagram.com/kairat_nobels">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4>Further Information</h4>
+						<ul>
+							<li><a target="_blank" href="https://www.youtube.com/watch?v=nfs8NYg7yQM">Terms &Condition</a></li>
+							<li><a target="_blank" href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h4>Follow us</h4>
+						<form action="#">
+							<input type="email" placeholder="Email Address">
+						</form>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/profile.php?id=100032941142706" target="_blank"><img src="images/icons/facebook.svg" alt="image"></a>
+							</li>
+							<li>
+								<a href="https://t.me/kairat_nobels" target="_blank"><img src="images/icons/twiter.svg" alt="image"></a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/kairat_nobels/" target="_blank"><img src="images/icons/linkidin.svg" alt="image"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer> 
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
